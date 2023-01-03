@@ -1,0 +1,77 @@
+Q- What is Emmet?
+What is Emmet used for?
+Ans-
+    Emmet is a free add-on for your text editor. It allows you to type shortcuts that are then expanded into full pieces of code. By using Emmet, developers type less, they save both on keystrokes and time.
+
+Q- Diffrence between Library and framework?
+Ans-
+    Frameworks and libraries are both code written by someone else that helps you perform some common tasks in a less verbose way.
+    1- When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
+
+    for Instance - A library is like going to Ikea. You already have a home, but you need a bit of help with furniture. You don’t feel like making your own table from scratch. Ikea allows you to pick and choose different things to go in your home. You are in control.
+
+    A framework, on the other hand, is like building a model home. You have a set of blueprints and a few limited choices when it comes to architecture and design. Ultimately, the contractor and blueprint are in control. And they will let you know when and where you can provide your input.
+
+Q- What is CDN? Why do we use it?
+Ans-
+    A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications. CDN can stand for content delivery network or content distribution network. When a user visits a website, data from that website's server has to travel across the internet to reach the user's computer. If the user is located far from that server, it will take a long time to load a large file, such as a video or website image. Instead, the website content is stored on CDN servers geographically closer to the users and reaches their computers much faster.
+
+What is a CDN used for?
+Ans-
+    A content delivery network (CDN) improves normal website functions and increases customer satisfaction. The following are some example use cases.
+    1-High-speed content delivery
+    By combining static and dynamic internet content delivery, you can use CDNs to provide your customers with a global, high-performing, whole-site experience. For example, Reuters is the world's largest news wholesaler to top channels such as BBC, CNN, the New York Times, and the Washington Post. The news media challenge for Reuters is to deliver news content promptly to customers around the globe. Reuters uses Amazon's CDN service, Amazon CloudFront, with Amazon Simple Storage Service (Amazon S3) to minimize dependence on satellite link communication and create a cheaper, highly available, and secure globally distributed network platform.
+
+    2-Real-time streaming
+    CDNs help reliably and cost-effectively deliver rich and high-quality media files. Companies streaming video and audio use CDNs to overcome three challenges: reduce bandwidth costs, increase scale, and decrease delivery time. For example, Hulu is an online video streaming platform owned by the Walt Disney Company. It uses Amazon CloudFront to consistently stream more than 20 GBps of data to its growing customer base.
+
+    3- Multi-user scaling
+    CDNs help support a large number of concurrent users. Website resources can manage only a limited number of client connections at a time. CDNs can rapidly scale this number by taking some of the load from the application server. For instance, King is a gaming company that builds socially connected, cross-platform games that can be played anytime, anywhere, and from any device. King has over 350 million players at any time, and they play 10.6 billion games a day on the platform.
+
+    What are the benefits of CDNs?
+    1- Reduce page load time
+    2- Reduce bandwidth costs
+    Bandwidth costs are a significant expense because every incoming website request consumes network bandwidth. Through caching and other optimizations, CDNs can reduce the amount of data an origin server must provide, reducing the costs of hosting for website owners.
+    3-Improve website security
+    Distributed denial-of-service (DDoS) attacks attempt to take down applications by sending large amounts of fake traffic to the website. CDNs can handle such traffic spikes by distributing the load between several intermediary servers, reducing the impact on the origin server.
+
+Q- Why React is known as React?
+Ans-
+    React is named React because of its ability to react to changes in data. When the data in a React component changes, React will automatically re-render the component so that it reflects the new data. This makes it easy to create performant user interfaces that always look up-to-date.
+
+Q- What is crossorigin in script tag?
+Ans-
+    The HTML <script> crossorigin Attribute is used for loading an external script into their domain from a third party server or another domain with the support of HTTP CORS Request. This attribute is used to protect sensitive information from the third party when fetching out the results.
+
+    Cross-Origin Resource Sharing(CORS) is a tool that allows web pages requesting for resources from another domain that is outside of their own domain. It is also used for managing cross-origin requests which is a request for a resource from an outside domain.
+
+    Syntax:
+    <script crossorigin="anonymous | use-credentials">
+
+    Attribute Values:
+    anonymous: It has a default value. It defines a CORS request will be sent without passing the credentials information.
+    use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
+    Note: This attribute is only valid for use if we try to fetch the resources from the third party domain. 
+
+Q- Diffrence between React and ReactDOM?
+Ans-
+    React-DOM: React-DOM is a complimentary library to React which glues React to the browser DOM
+
+    In a nutshell, Whenever we use component, classes, elements, etc. We’re using React and whenever we use methods like render() or findDOMNode() we’re using React-DOM.
+    React - for core react fundamental
+    reactDOM - give acccess to DOM
+
+Q- what is diffrence between react.production.js and react.development.js file via CDN
+Ans-
+    production versions is Minified and optimized so size of Production file is less than development files
+
+Q- what is diffrence between Async vs Defer
+Ans-
+    script with Async attibute -
+    1- HTML parsing will continue, as weel as script will fetch Asyncronoully 
+    2- once script is fetched from server and avilble in browser then after HTML Parsing will be stopped.
+    3- then sript will be fully executed in browser.
+    4- once execution finish, HTML arsing will again continue
+    script with Defer attibute -
+    1- HTML parsing will goes on parallely script will be fetched
+    2- once HTML parsing fully executed then script execution will start
