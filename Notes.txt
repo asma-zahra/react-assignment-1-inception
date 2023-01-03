@@ -1,0 +1,162 @@
+React: React is a javascript library, designed for building better user interfaces.
+===================================DAY1==============================
+
+Q- React is Library or framework?
+Ans- Homework
+
+Q- Diffrence between Library and Framework
+Ans-
+
+Q- Tool using 
+Ans - chrome , VS chrome
+
+Q- Extension for VS code
+1- Bracket pair colorizer toggler
+2- Better Comment
+3- Tailwind CSS IntelliSense
+4- ES7+ React/Redux/React-Native snippets
+5- ESLint
+6- GitLens — Git supercharged
+7-HTML CSS Support
+8- Live Server
+9- Prettier - Code formatter
+10-Prettier ESLint
+11- Prettify JSON
+12-Simple React Snippets
+13-vscode-icons
+
+Q-What is Emmet?
+============================================================
+Q- lets create a div with id root and create h1 h2 and appned all child in this id root div
+<!--Hello World Using HTML  -->
+    <div id="root">
+        <h1>Hello</h1>
+    </div>
+
+// Hello World Using JS (DOM Manipulation)
+const rootDiv = document.getElementById('root')
+ const heading1 = document.createElement("h1");
+heading1.innerHTML = "Hello World "
+rootDiv.appendChild(heading1);
+=======================================================
+Q- What is CDN 
+Content Delivery Network
+
+Q- inject CDN link for react and reactDOM
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+Q- How do you know CDN is working
+type React on console you will get object
+type ReactDOM on console you will get object
+
+we are able to access react and react Dom bcz we hace added react and react dom script using CDN
+
+Q- what is inside CDN of React and ReactDOM
+Ans- it is just JS code which facebook developer wrote for us to make our job easy. so that we can use it
+
+Q- What is cross oring in CDN
+Ans- HOME WORK
+============================================================
+Q- what is Shortest program of JS
+Ans- empty file
+
+Q- Why we added react and reactDOM script
+Ans- React - for core react fundamental
+reactDOM - give acccess to DOM
+
+- using react reactdom script file we can access all the superpower of react
+
+========================================================
+Q- How to create element in react
+A- using "react.createElemnet()"
+first paramenter - "h1" ==>elemnt name
+second paramenter - {id:"1" , key:"h1"} ==>object where i can add attibute(props)
+third parameter - "Hello" ===> innerHTML
+
+const Heading = react.createElement("h1", {id:"h1", key:"first child"}, "Hello World");
+
+Q- what react element give?
+it gives object
+console.log(Heading);
+{$$typeof: Symbol(react.element), type: 'h1', key: 'first child', ref: null, props: {…}, …}
+$$typeof
+: 
+Symbol(react.element)
+key
+: 
+"first child"
+props
+: 
+{id: 'h1', children: 'Hello World'}
+ref
+: 
+null
+type
+: 
+"h1"
+_owner
+: 
+null
+_store
+: 
+{validated: false}
+_self
+: 
+null
+_source
+: 
+null
+[[Prototype]]
+: 
+Object
+
+Q- how to tell react it is root element
+
+read from reactDom that it is root elemnt
+use this Api "RactDOM.createRoot()"
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+Q- How to appent child or react elemnt into id root
+Ans- USE API
+//   passing react element inside render metho
+root.render(Hedaing)
+
+reactDom will manipulate dom oncer we render
+
+Note - render method will override all the html inside div id root . and replace it with Haading.
+=========================================================================
+Q- Create Nested element using createREact
+      // Create react element h1
+      const Heading1 = React.createElement(
+        "h1",
+        { id: "h1", key: "first child" },
+        "Hello World"
+      );
+      console.log(Heading1); //React element gives object
+      // Create react element h2
+      const Heading2 = React.createElement(
+        "h2",
+        { id: "h2", key: "second Child" },
+        "Hello World!!!!!"
+      );
+      console.log(Heading2); //React element gives object
+
+      // Create react element div and insert Heading1and Heading2 
+      const container = React.createElement(
+        "div",
+        { id: "container", key: "div-container" },
+        [Heading1 ,Heading2]
+      );
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(container);
+======================================================================
+NOTE- we can use HTML for Header footer and we want to use react in search 
+we make search bar as root and write rect code for search bar inside root
+
+- we can use react in our exiting project
+
+Q- DEvelopment version of CDN vs Production version of React
+
